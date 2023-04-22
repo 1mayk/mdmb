@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./header.css";
 import logo from "../../assets/logo.png";
@@ -7,6 +7,7 @@ import LocalizationBar from "../LocalizationBar/LocalizationBar";
 import { SlLogin } from "react-icons/sl";
 
 export default function Header() {
+  const [activeBtn, setActiveBtn] = useState<string>("inicio");
   return (
     <section className="header__section">
       <Link to="/">
@@ -14,9 +15,30 @@ export default function Header() {
       </Link>
       {/* menuzinho */}
       <ul className="menu__header">
-        <li className="menu__item active">Inicio</li>
-        <li className="menu__item">Sobre</li>
-        <li className="menu__item">Contato</li>
+        <li
+          onClick={() => setActiveBtn("inicio")}
+          className={
+            activeBtn === "inicio" ? "menu__item active" : "menu__item"
+          }
+        >
+          Inicio
+        </li>
+        <li
+          onClick={() => setActiveBtn("sobre")}
+          className={
+            activeBtn === "sobre" ? "menu__item active" : "menu__item"
+          }
+        >
+          Sobre
+        </li>
+        <li
+          onClick={() => setActiveBtn("contato")}
+          className={
+            activeBtn === "contato" ? "menu__item active" : "menu__item"
+          }
+        >
+          Contato
+        </li>
       </ul>
 
       <SearchBar />
