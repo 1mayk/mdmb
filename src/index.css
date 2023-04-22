@@ -1,0 +1,89 @@
+/*=============== FONTS ===============*/
+/* Importe as fontes */
+@font-face {
+  font-family: 'Boomer';
+  src: url('./fonts/Boomer-Tantrum.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'GoBold';
+  src: url('./fonts//Gobold-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Brandon';
+  src: url('./fonts//Brandon-Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'BrandonRegular';
+  src: url('./fonts//Brandon.otf') format('opentype');
+}
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  --black-color: #191621;
+  --white-color: #FAFAFA;
+  --primary-color: #7f29c2;
+  --secondary-color: #fbba37;
+  --terciary-color: #300145;
+
+  /*========== Font and typography ==========*/
+  --body-font: 'Boomer', sans-serif;
+}
+
+/*=============== BASE ===============*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: var(--body-font);
+  font-size: 16px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+::selection {
+  color: white;
+  background-color: var(--primary-color);
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 576px) {
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+}

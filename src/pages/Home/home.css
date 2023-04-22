@@ -1,0 +1,10 @@
+.home__section {
+  background-color: var(--white-color);
+  height: 100vh;
+  max-width: 100vw;
+  /* overflow: hidden; */
+}
+
+h1 {
+  color: var(--primary-color);
+}

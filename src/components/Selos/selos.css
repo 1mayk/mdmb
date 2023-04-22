@@ -1,0 +1,10 @@
+.selos__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6rem;
+  padding: 3rem 10rem;
+  /* background-color: blue; */
+  font-family: 'Brandon';
+  /* max-width: 1240px; */
+}

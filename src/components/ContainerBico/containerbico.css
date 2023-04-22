@@ -1,0 +1,28 @@
+.bico__container {
+  display: flex;
+  width: 25rem;
+  height: 11rem;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.bico__container:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.bico__img {
+  width: 37%;
+  border-radius: 15px;
+  background-color: var(--black-color);
+}
+
+.bico__infos {
+  /* background-color: blue; */
+  width: 63%;
+  padding: 1rem 0 1rem 1.5rem;
+}

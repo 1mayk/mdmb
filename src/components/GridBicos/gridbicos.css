@@ -1,0 +1,15 @@
+.grid__container {
+  padding: 0 3rem;
+  /* background-color: red; */
+}
+
+.title {
+  font-size: 1.5rem;
+}
+
+.grid__bicos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding-top: 2rem;
+}
