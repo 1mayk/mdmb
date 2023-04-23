@@ -7,18 +7,15 @@
   margin-left: 2rem;
   height: 2rem;
   width: 11rem;
+  color: white;
 }
 
 .localization__container:hover {
   cursor: pointer;
 }
 
-p {
-  color: var(--terciary-color);
-}
-
 .localization__icon {
   /* background-color: red; */
   font-size: 1.7rem;
-  color: var(--terciary-color);
+  color: white;
 }

@@ -1,4 +1,5 @@
 .bico__container {
+  background-color: var(--white-color);
   display: flex;
   width: 25rem;
   height: 11rem;

@@ -69,7 +69,7 @@ img {
 
 ::selection {
   color: white;
-  background-color: var(--primary-color);
+  background-color: var(--terciary-color);
 }
 
 /*=============== BREAKPOINTS ===============*/

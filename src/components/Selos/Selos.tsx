@@ -4,11 +4,11 @@ import "./selos.css";
 export default function Selos() {
   return (
     <section className="selos__container">
-      <p>VENDAS</p>
-      <p>ALIMENTAÇÃO</p>
-      <p>SERVIÇOS DE CASA</p>
-      <p>BELEZA</p>
-      <p>UBER</p>
+      <div>VENDAS</div>
+      <div>ALIMENTAÇÃO</div>
+      <div>SERVIÇOS DE CASA</div>
+      <div>BELEZA</div>
+      <div>UBER</div>
     </section>
   );
 }

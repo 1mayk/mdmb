@@ -4,7 +4,30 @@
   align-items: center;
   margin-top: 6rem;
   padding: 3rem 10rem;
-  /* background-color: blue; */
+  background-color: var(--primary-color);
   font-family: 'Brandon';
-  /* max-width: 1240px; */
+  display: none;
+}
+
+.selos__container div {
+  padding: 2rem;
+  background-color: red;
+  box-shadow: inset 0 0 0 9px rgb(225 225 225 / 30%);
+  width: 300px;
+  height: 100px;
+  animation: profile__animate 8s ease-in-out infinite 1s;
+}
+
+@keyframes profile__animate {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
 }

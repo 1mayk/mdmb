@@ -1,5 +1,6 @@
 .search__container {
-  background-color: rgba(0, 0, 0, 0.06);
+  /* background-color: rgba(0, 0, 0, 0.06); */
+  background-color: var(--primary-color);
   display: flex;
   align-items: center;
   border-radius: 10px;
@@ -11,16 +12,20 @@
 
 .search__icon {
   font-size: 1.3rem;
-  color: var(--primary-color);
+  color: var(--terciary-color);
 }
 
 .search__input {
   margin-left: 1rem;
   border-style: none;
   background-color: transparent;
-  color: var(--terciary-color);
+  color: #FFF;
   width: 36vw;
   font-family: sans-serif;
+}
+
+.search__input::placeholder {
+  color: var(--terciary-color);
 }
 
 input {

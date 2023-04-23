@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./header.css";
 import logo from "../../assets/logo.png";
+import profile from '../../assets/perfil.png'
 import SearchBar from "../SearchBar/SearchBar";
 import LocalizationBar from "../LocalizationBar/LocalizationBar";
 import { SlLogin } from "react-icons/sl";
