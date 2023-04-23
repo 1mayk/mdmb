@@ -1,5 +1,5 @@
 .bico__container {
-  background-color: var(--white-color);
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   width: 25rem;
   height: 11rem;
@@ -9,9 +9,10 @@
 }
 
 .bico__container:hover {
+  background-color: #FFF;
   cursor: pointer;
   transform: scale(1.05);
-  transition: 0.3s ease-in-out;
+  transition: .5s ease-in-out;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
