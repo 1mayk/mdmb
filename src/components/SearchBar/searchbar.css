@@ -25,7 +25,7 @@
 }
 
 .search__input::placeholder {
-  color: rgba(72, 5, 99, 0.95);
+  color: rgba(0, 0, 0, 0.6);
 }
 
 input {
