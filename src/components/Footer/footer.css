@@ -1,0 +1,9 @@
+.footer__section {
+  padding: 5rem 3.5rem;
+}
+
+@media screen and (max-width: 350px) {
+  .footer__section {
+    background-color: blue;
+  }
+}
