@@ -2,10 +2,11 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./header.css";
 import logo from "../../assets/logo.png";
-import profile from '../../assets/perfil.png'
+import profile from "../../assets/perfil.png";
 import SearchBar from "../SearchBar/SearchBar";
 import LocalizationBar from "../LocalizationBar/LocalizationBar";
 import { SlLogin } from "react-icons/sl";
+import { BsSearch } from "react-icons/bs";
 
 export default function Header() {
   const [activeBtn, setActiveBtn] = useState<string>("inicio");
@@ -26,9 +27,7 @@ export default function Header() {
         </li>
         <li
           onClick={() => setActiveBtn("sobre")}
-          className={
-            activeBtn === "sobre" ? "menu__item active" : "menu__item"
-          }
+          className={activeBtn === "sobre" ? "menu__item active" : "menu__item"}
         >
           Sobre
         </li>
@@ -46,6 +45,15 @@ export default function Header() {
       <LocalizationBar />
 
       <SlLogin className="login__icon" />
+
+      <BsSearch
+        onClick={() => setActiveBtn("search")}
+        className={
+          activeBtn === "search"
+            ? "search__icon__tiny active"
+            : "search__icon__tiny"
+        }
+      />
     </section>
   );
 }

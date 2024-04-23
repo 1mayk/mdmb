@@ -9,8 +9,8 @@ export default function ContainerBico() {
       </div>
       <div className="bico__infos">
         <p>Nome</p>
-        <p>Estrela</p>
-        <p>Cupom</p>
+        <p>Categoria Especifica</p>
+        <p>Selo</p>
       </div>
     </section>
   );

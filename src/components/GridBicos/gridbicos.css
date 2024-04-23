@@ -18,14 +18,17 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
+  padding-bottom: 2.5rem;
 }
 
 @media screen and (max-width: 350px) {
   .grid__container {
     margin-top: -4.5rem!important;
+    padding: 0 2rem;
   }
   .grid__bicos {
     grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
   }
   .title {
     width: 6.75rem;

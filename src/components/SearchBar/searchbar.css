@@ -31,3 +31,9 @@
 input {
   outline: none;
 }
+
+@media screen and (max-width: 350px) {
+  .search__container {
+    display: none;
+  }
+}

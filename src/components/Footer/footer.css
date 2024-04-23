@@ -1,9 +1,20 @@
 .footer__section {
-  padding: 5rem 3.5rem;
+  padding: 2.5rem 3.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background-color: rgba(0, 0, 0, 1);
+  color: var(--primary-color);
 }
 
-@media screen and (max-width: 350px) {
-  .footer__section {
-    background-color: blue;
-  }
+.f__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
+
+/* @media screen and (max-width: 350px) {
+  .footer__section {
+
+  }
+} */
