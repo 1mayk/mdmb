@@ -1,33 +1,22 @@
 import React from "react";
-import "./gridbicos.css";
-import bicos from "../../assets/BICOS.png";
+import bicosTitle from "../../assets/BICOS.png";
 import ContainerBico from "../ContainerBico/ContainerBico";
+import { bicosArray } from "../../database/bicos";
+import "./gridbicos.css";
 
 export default function GridBicos() {
   return (
     <section className="grid__container">
-      <img src={bicos} alt="bicos titulo" className="title" />
+      <img src={bicosTitle} alt="bicos titulo" className="title" />
       <section className="grid__bicos">
-        {/* dps isso será alterado para ser um .map() */}
-        <ContainerBico />
-        <ContainerBico />
-        <ContainerBico />
-        <ContainerBico />
-        <ContainerBico />
-        <ContainerBico />
-        <ContainerBico />
-        <ContainerBico />
-        <ContainerBico />
-        <ContainerBico />
-        <ContainerBico />
-        <ContainerBico />
-        {/* <ContainerBico />
-        <ContainerBico />
-        <ContainerBico />
-        <ContainerBico />
-        <ContainerBico />
-        <ContainerBico />
-        <ContainerBico /> */}
+        { bicosArray.map(
+          (bico) => <ContainerBico 
+          key={bico.name} 
+          category={bico.category} 
+          name={bico.name} 
+          stamp={bico.stamp} 
+          thumbail={bico.thumbail}/>
+        )}
       </section>
       <hr />
     </section>

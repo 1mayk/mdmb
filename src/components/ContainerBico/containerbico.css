@@ -44,4 +44,9 @@
     padding: 0.5rem 0 1rem 1.5rem;
     font-size: .85rem;
   }
+  .stamp__img {
+    width: 3rem;
+    margin-left: 3rem;
+    /* background-color: red; */
+  }
 }
